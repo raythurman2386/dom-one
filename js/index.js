@@ -60,3 +60,15 @@ for (let i = 0; i < navItems.length; i++) {
 
 // Change the nav color to be green
 navItems.forEach((item) => (item.getElementsByClassName.color = 'lightseagreen'));
+
+// Create two new nav items
+const newElement = (element, content) => {
+	let newElement;
+	newElement = document.createElement(element);
+	newElement.textContent = content;
+	newElement.style.cursor = 'pointer';
+	return newElement;
+};
+
+nav.prepend(newElement('a', 'Home'));
+nav.appendChild(newElement('a', 'Blog'));
