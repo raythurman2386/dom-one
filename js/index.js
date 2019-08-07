@@ -78,3 +78,16 @@ const cta = document.querySelector('.cta');
 const ctaH1 = document.querySelector('.cta-text h1');
 const ctaImg = document.getElementById('cta-img');
 const ctaButton = document.querySelector('.cta-text button');
+
+let h1Arr = siteContent['cta']['h1'].split(' ');
+h1Arr.splice(1, 0, `<br>`);
+h1Arr.splice(3, 0, `<br>`);
+
+// Set the cta h1 with innerHTML since there is a HTML tag
+ctaH1.innerHTML = h1Arr.join('');
+
+// Set the cta image
+ctaImg.src = siteContent['cta']['img-src'];
+
+// Set the cta Button
+ctaButton.textContent = siteContent['cta']['button'];
