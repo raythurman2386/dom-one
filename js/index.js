@@ -72,3 +72,9 @@ const newElement = (element, content) => {
 
 nav.prepend(newElement('a', 'Home'));
 nav.appendChild(newElement('a', 'Blog'));
+
+// Variables for CTA Section
+const cta = document.querySelector('.cta');
+const ctaH1 = document.querySelector('.cta-text h1');
+const ctaImg = document.getElementById('cta-img');
+const ctaButton = document.querySelector('.cta-text button');
