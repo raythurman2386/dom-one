@@ -51,8 +51,6 @@ const nav = document.querySelector('nav');
 const navItems = document.querySelectorAll('nav a');
 const navValues = Object.values(siteContent['nav']);
 
-console.log(navValues);
-
 // Assign nav object values to the navItems
 for (let i = 0; i < navItems.length; i++) {
 	navItems[i].textContent = navValues[i];
@@ -92,14 +90,21 @@ ctaImg.src = siteContent['cta']['img-src'];
 // Set the cta Button
 ctaButton.textContent = siteContent['cta']['button'];
 
-// Variables for the top content
+// Variables for the heading content
 const contentHeadings = document.querySelectorAll('.main-content h4');
-const topContentPara = document.querySelectorAll('.top-content .text-content p');
 
-console.log(contentHeadings);
-
+// Placing the sites h4 elements at once
 Object.values(siteContent['main-content'])
 	.filter((element) => {
 		return !element.match(/(img)/i) && !element.match(/\s/g);
 	})
 	.forEach((element, i) => (contentHeadings[i].textContent = element));
+
+// Content for the site paragraphs
+const contentParas = document.querySelectorAll('.main-content p');
+
+Object.values(siteContent['main-content'])
+	.filter((element) => {
+		return element.match(/\s/g);
+	})
+	.forEach((element, i) => (contentParas[i].textContent = element));
