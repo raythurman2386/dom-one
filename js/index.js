@@ -91,3 +91,7 @@ ctaImg.src = siteContent['cta']['img-src'];
 
 // Set the cta Button
 ctaButton.textContent = siteContent['cta']['button'];
+
+// Variables for the top content
+const topContentHeadings = document.querySelectorAll('.top-content .text-content h4');
+const topContentPara = document.querySelectorAll('.top-content .text-content p');
