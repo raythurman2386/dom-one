@@ -54,3 +54,6 @@ const navValues = Object.values(siteContent['nav']);
 console.log(navValues);
 
 // Assign nav object values to the navItems
+for (let i = 0; i < navItems.length; i++) {
+	navItems[i].textContent = navValues[i];
+}
