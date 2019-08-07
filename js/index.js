@@ -1,5 +1,5 @@
 const siteContent = {
-	nav          : {
+	nav            : {
 		'nav-item-1' : 'Services',
 		'nav-item-2' : 'Product',
 		'nav-item-3' : 'Vision',
@@ -8,9 +8,9 @@ const siteContent = {
 		'nav-item-6' : 'Contact',
 		'img-src'    : 'img/logo.png',
 	},
-	cta          : {
-		h1      : 'DOM Is Awesome',
-		button  : 'Get Started',
+	cta            : {
+		h1        : 'DOM Is Awesome',
+		button    : 'Get Started',
 		'img-src' : 'img/header-img.png',
 	},
 	'main-content' : {
@@ -31,13 +31,13 @@ const siteContent = {
 		'vision-content'   :
 			'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.',
 	},
-	contact      : {
+	contact        : {
 		'contact-h4' : 'Contact',
-		address    : '123 Way 456 Street Somewhere, USA',
-		phone      : '1 (888) 888-8888',
-		email      : 'sales@greatidea.io',
+		address      : '123 Way 456 Street Somewhere, USA',
+		phone        : '1 (888) 888-8888',
+		email        : 'sales@greatidea.io',
 	},
-	footer       : {
+	footer         : {
 		copyright : 'Copyright Great Idea! 2018',
 	},
 };
@@ -57,3 +57,6 @@ console.log(navValues);
 for (let i = 0; i < navItems.length; i++) {
 	navItems[i].textContent = navValues[i];
 }
+
+// Change the nav color to be green
+navItems.forEach((item) => (item.getElementsByClassName.color = 'lightseagreen'));
