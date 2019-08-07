@@ -93,5 +93,13 @@ ctaImg.src = siteContent['cta']['img-src'];
 ctaButton.textContent = siteContent['cta']['button'];
 
 // Variables for the top content
-const topContentHeadings = document.querySelectorAll('.top-content .text-content h4');
+const contentHeadings = document.querySelectorAll('.main-content h4');
 const topContentPara = document.querySelectorAll('.top-content .text-content p');
+
+console.log(contentHeadings);
+
+Object.values(siteContent['main-content'])
+	.filter((element) => {
+		return !element.match(/(img)/i) && !element.match(/\s/g);
+	})
+	.forEach((element, i) => (contentHeadings[i].textContent = element));
