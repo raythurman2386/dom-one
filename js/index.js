@@ -112,3 +112,9 @@ Object.values(siteContent['main-content'])
 // Center Image
 const centerImg = document.getElementById('middle-img');
 centerImg.src = siteContent['main-content']['middle-img-src'];
+
+// Contact section
+const contactHeader = document.querySelector('.contact h4');
+const contactParas = document.querySelectorAll('.contact p');
+
+// footer section
