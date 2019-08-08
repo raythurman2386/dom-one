@@ -126,3 +126,5 @@ Object.values(siteContent['contact'])
 	.forEach((element, i) => (contactParas[i].textContent = element));
 
 // footer section
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['copyright'];
