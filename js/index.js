@@ -128,3 +128,13 @@ Object.values(siteContent['contact'])
 // footer section
 const footer = document.querySelector('footer p');
 footer.textContent = siteContent['footer']['copyright'];
+
+// STRETCH
+// Adding Styles through JS to make nav fixed
+const header = document.querySelector('header');
+header.style.position = 'fixed';
+header.style.top = '0';
+header.style.zIndex = '1';
+header.style.backgroundColor = '#fff';
+
+cta.style.marginTop = '75px';
