@@ -108,3 +108,7 @@ Object.values(siteContent['main-content'])
 		return element.match(/\s/g);
 	})
 	.forEach((element, i) => (contentParas[i].textContent = element));
+
+// Center Image
+const centerImg = document.getElementById('middle-img');
+centerImg.src = siteContent['main-content']['middle-img-src'];
