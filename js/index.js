@@ -117,4 +117,12 @@ centerImg.src = siteContent['main-content']['middle-img-src'];
 const contactHeader = document.querySelector('.contact h4');
 const contactParas = document.querySelectorAll('.contact p');
 
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+
+Object.values(siteContent['contact'])
+	.filter((element) => {
+		return element.match(/\s/g);
+	})
+	.forEach((element, i) => (contactParas[i].textContent = element));
+
 // footer section
