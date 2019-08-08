@@ -29,7 +29,7 @@ const siteContent = {
 			'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.',
 		'vision-h4'        : 'Vision',
 		'vision-content'   :
-			'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.',
+			'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam conmain-contentvallis augue justo, at imperdiet metus scelerisque quis.',
 	},
 	contact        : {
 		'contact-h4' : 'Contact',
