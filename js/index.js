@@ -29,7 +29,9 @@ const siteContent = {
 			'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.',
 		'vision-h4'        : 'Vision',
 		'vision-content'   :
+
 			'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam conmain-contentvallis augue justo, at imperdiet metus scelerisque quis.',
+
 	},
 	contact        : {
 		'contact-h4' : 'Contact',
@@ -45,6 +47,7 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById('logo-img');
 logo.setAttribute('src', siteContent['nav']['img-src']);
+
 
 // Nav bar variables
 const nav = document.querySelector('nav');
